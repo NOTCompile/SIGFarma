@@ -10,7 +10,7 @@ public class SigfarmaApiApplication {
 		SpringApplication.run(SigfarmaApiApplication.class, args);
 		System.out.println("\n===========================================");
 		System.out.println("SIGFarma ");
-		System.out.println("API disponible en: http://localhost:8080/api");
+		System.out.println("API disponible en: http://localhost:8080/swagger-ui/index.html");
 		System.out.println("Base de datos: PostgreSQL");
 		System.out.println("===========================================\n");
 	}
