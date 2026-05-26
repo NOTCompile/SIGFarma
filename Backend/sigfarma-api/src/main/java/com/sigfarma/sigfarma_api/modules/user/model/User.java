@@ -19,10 +19,10 @@ public class User {
     private String apellidos;
 
     @Column(nullable = false, unique = true, length = 8)
-    private String dni;
+    private Number dni;
 
     @Column(length = 9)
-    private String celular;
+    private Number celular;
 
     @Column(nullable = false, unique = true, length = 150)
     private String correo;
@@ -35,7 +35,7 @@ public class User {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "tipo_rol_id", nullable = false)
-    private TypeRol tipoRol;
+    private TypeRole tipoRol;
 
     @Column(name = "creado", nullable = false, updatable = false)
     private LocalDateTime creado;

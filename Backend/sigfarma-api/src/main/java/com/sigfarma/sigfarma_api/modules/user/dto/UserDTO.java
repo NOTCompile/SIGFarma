@@ -6,8 +6,8 @@ import lombok.Data;
 public class UserDTO {
     private String nombres;
     private String apellidos;
-    private String dni;
-    private String celular;
+    private Number dni;
+    private Number celular;
     private String correo;
     private String direccion;
     private String contrasenia;

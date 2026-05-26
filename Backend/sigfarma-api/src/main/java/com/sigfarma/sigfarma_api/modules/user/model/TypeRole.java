@@ -6,9 +6,10 @@ import lombok.Data;
 @Entity
 @Table(name = "Tipo_rol")
 @Data
-public class TypeRol {
+public class TypeRole {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
     @Column(nullable = false, length = 255)
